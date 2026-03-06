@@ -214,7 +214,6 @@ body {
   border-radius: 30px;
 }
 
-/* ─── Content Sections ─── */
 .content-sections {
   max-width: 1200px;
   margin: 0 auto;
@@ -222,6 +221,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5% 80px;
 }
 
 .split-section {
