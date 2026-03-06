@@ -128,24 +128,6 @@ body {
   border-radius: 40px;
 }
 
-.notch {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 25px;
-  background: #000;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  z-index: 2;
-}
-
-.phone-frame.small .notch {
-  width: 100px;
-  height: 20px;
-}
-
 .screen-img {
   width: 100%;
   height: 100%;
