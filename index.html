@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
@@ -24,37 +24,39 @@
         <button class="btn-primary nav-cta">Join Waitlist</button>
     </nav>
 
-    <!-- Hero Section (Matching the provided UI) -->
+    <!-- Hero Section with Device Mockup -->
     <header class="hero">
-        <div class="match-display fade-in-up">
-            <div class="avatar-group">
-                <div class="avatar a1">
-                    <span class="emoji">🧑</span>
-                </div>
-                <div class="avatar a2">
-                    <span class="emoji">👩</span>
-                    <div class="match-badge">97%</div>
-                </div>
-            </div>
-            <h1 class="match-title">1 in a Billion Alignment</h1>
-            <p class="match-subtitle">Gene Keys • Human Design • Western Astro • Vedic Astro • Numerology</p>
-        </div>
-
-        <div class="hero-text fade-in-up delay-1">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #111; margin-bottom: 16px;">
-                Understand Your Own Psyche</h2>
-            <p style="color: #666; max-width: 500px; margin: 0 auto 32px; font-size: 1.1rem; line-height: 1.6;">
+        <div class="hero-text fade-in-up">
+            <h1>Understand Your Own Psyche</h1>
+            <p class="hero-subtitle">
                 We don't just match you for dating. We provide an absolute mirror of your soul. A profound reading of
                 who you are, reflected through the people around you.
             </p>
-            <button class="btn-primary large">Discover the App</button>
+            <div class="hero-actions">
+                <button class="btn-primary large">Discover the App</button>
+            </div>
+        </div>
+
+        <div class="hero-visual fade-in-up delay-1">
+            <div class="phone-frame">
+                <div class="notch"></div>
+                <img src="images/01_hero_intro.png" alt="1 in a Billion App Home" class="screen-img">
+            </div>
         </div>
     </header>
 
+    <!-- Split Sections for Features -->
     <main class="content-sections">
+
         <!-- The Psyche Mirror -->
-        <section class="section fade-in-up delay-2">
-            <div class="section-card">
+        <section class="split-section fade-in-up delay-2">
+            <div class="split-visual">
+                <div class="phone-frame small">
+                    <div class="notch"></div>
+                    <img src="images/09_reading_playback.png" alt="The Audiobook of You" class="screen-img">
+                </div>
+            </div>
+            <div class="split-text">
                 <div class="card-icon" style="background: linear-gradient(135deg, #f4d4a0, #e8c890);">🎧</div>
                 <h3 class="section-title">The 40-Minute Audiobook</h3>
                 <p class="section-text">
@@ -64,50 +66,53 @@
             </div>
         </section>
 
-        <!-- The Nuclear Option -->
-        <section class="section fade-in-up">
-            <div class="section-card">
-                <div class="card-icon" style="background: linear-gradient(135deg, #ff9ca8, #e05e6b);">📚</div>
-                <h3 class="section-title">The Nuclear Option</h3>
+        <!-- The Souls Lab -->
+        <section class="split-section reverse fade-in-up">
+            <div class="split-visual">
+                <div class="phone-frame small">
+                    <div class="notch"></div>
+                    <img src="images/04_souls_lab.png" alt="The Souls Lab" class="screen-img">
+                </div>
+            </div>
+            <div class="split-text">
+                <div class="card-icon" style="background: linear-gradient(135deg, #cdb2df, #a787c3);">🔬</div>
+                <h3 class="section-title">The Souls Lab</h3>
                 <p class="section-text">
-                    For true seekers: 16 deep-dive 40-minute readings exploring every facet of your psyche. It goes far
-                    beyond matchmaking and into deep, uncompromising self-analysis.
+                    Dive deep into the karmic zoo. For true seekers, the app offers deep-dive readings exploring every
+                    facet of your psyche. It goes far beyond matchmaking and into uncompromising self-analysis.
                 </p>
             </div>
         </section>
 
-        <!-- Use Cases -->
-        <section class="section fade-in-up">
-            <div class="section-card use-cases">
-                <h3 class="section-title" style="margin-bottom: 24px;">A Mirror For Everyone</h3>
-                <ul class="use-case-list">
-                    <li>
-                        <div class="list-icon">👁️</div>
-                        <div>
-                            <strong>Self-Explorers</strong>
-                            <span>Use the platform purely to uncover your hidden traits.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-icon">👨‍👩‍👧</div>
-                        <div>
-                            <strong>Parents</strong>
-                            <span>Understand your children's dynamic and energetic resonance.</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-icon">🛋️</div>
-                        <div>
-                            <strong>Therapists / Analysts</strong>
-                            <span>Gain a spiritual and energetic second opinion.</span>
-                        </div>
-                    </li>
-                </ul>
+        <!-- Use Cases & Features -->
+        <section class="section-card use-cases fade-in-up">
+            <h3 class="section-title">A Tool for Every Perspective</h3>
+            <p class="section-text" style="max-width: 500px; margin: 0 auto 30px; text-align: center;">It does not
+                replace a psychoanalyst, but it empowers everyone with an incredible second opinion.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="list-icon">👁️</div>
+                    <strong>Self-Explorers</strong>
+                    <span>Use the platform purely to uncover your hidden traits.</span>
+                </div>
+                <div class="feature-item">
+                    <div class="list-icon">👨‍👩‍👧</div>
+                    <strong>Parents</strong>
+                    <span>Understand your children's dynamic and energetic resonance.</span>
+                </div>
+                <div class="feature-item">
+                    <div class="list-icon">🛋️</div>
+                    <strong>Therapists & Analysts</strong>
+                    <span>Gain a spiritual and energetic 'second opinion' of patients.</span>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer fade-in-up">
+        <div class="logo" style="margin-bottom: 8px;">1 in a <span
+                style="font-family: 'Playfair Display', serif; font-weight: 700; color: #111;">Billion</span></div>
         <p>Only 1 in a 1,000,000,000 people share this resonance.</p>
     </footer>
 
