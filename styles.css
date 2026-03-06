@@ -264,6 +264,28 @@ body {
   font-style: italic;
 }
 
+.social-links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 8px;
+  /* enlarge click area */
+}
+
+.social-links a svg {
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover svg {
+  color: #111;
+  transform: translateY(-1px);
+}
+
 /* ─── Lyrics Card ─── */
 .lyrics-container {
   display: flex;
