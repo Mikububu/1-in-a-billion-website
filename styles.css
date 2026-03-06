@@ -842,3 +842,77 @@ body {
   color: #6B6B6B;
   border: 1px solid rgba(26, 26, 26, 0.15);
 }
+/* Tiers specific styles moved to global */
+.tier-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 32px;
+    padding: 60px 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.tier-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.tier-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 16px;
+}
+
+.tier-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--brand-red);
+    margin-bottom: 32px;
+}
+
+.tier-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.tier-features li {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 32px;
+    line-height: 1.5;
+}
+
+.tier-features li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--brand-red);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.nuclear-badge {
+    position: absolute;
+    top: 24px;
+    right: -32px;
+    background: #111;
+    color: #fff;
+    padding: 8px 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: rotate(45deg);
+}
