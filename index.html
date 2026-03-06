@@ -9,21 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">1 in a <span
-                style="font-family: 'Playfair Display', serif; font-weight: 700; color: #111;">Billion</span></div>
-        <a href="https://testflight.apple.com/join/Eup7Wx7t" target="_blank" style="text-decoration: none;">
-            <button class="btn-primary nav-cta">Request iOS Beta</button>
+    <!-- Global Navigation -->
+    <nav class="global-nav" id="globalNav">
+        <a href="index.html" class="nav-brand">
+            <img src="images/logo.png" alt="1 in a Billion Logo">
+            1 in a Billion
         </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="archive.html" class="nav-link">The Archive</a>
+            <a href="philosophy.html" class="nav-link">Philosophy</a>
+            <a href="about.html" class="nav-link">About</a>
+        </div>
     </nav>
 
     <!-- Hero Section with Device Mockup -->
@@ -36,9 +42,9 @@
                 listening to the truth of who you are.
             </p>
             <div class="hero-actions">
-                <button class="btn-primary large"
-                    onclick="document.querySelector('.content-sections').scrollIntoView({ behavior: 'smooth' });">Discover
-                    the App</button>
+                <a href="https://testflight.apple.com/join/Eup7Wx7t" target="_blank" style="text-decoration: none;">
+                    <button class="btn-primary large">Request iOS Beta</button>
+                </a>
             </div>
         </div>
 
@@ -53,7 +59,7 @@
     <main class="content-sections">
 
         <!-- The Psyche Mirror -->
-        <section class="split-section fade-in-up delay-2">
+        <section class="split-section fade-in-up delay-2" style="margin-bottom: 80px;">
             <div class="split-visual">
                 <div class="phone-frame small">
                     <img src="images/09_reading_playback.png" alt="The Audiobook of You" class="screen-img">
@@ -73,7 +79,7 @@
         </section>
 
         <!-- The Souls Lab -->
-        <section class="split-section reverse fade-in-up">
+        <section class="split-section reverse fade-in-up" style="margin-bottom: 80px;">
             <div class="split-visual">
                 <div class="phone-frame small">
                     <img src="images/04_souls_lab.png" alt="The Souls Lab" class="screen-img">
@@ -91,8 +97,8 @@
             </div>
         </section>
 
-        <!-- The Music of 1 in a Billion -->
-        <section class="split-section fade-in-up">
+        <!-- The Music of 1 in a Billion (David Bowie Section) -->
+        <section class="split-section fade-in-up" style="margin-bottom: 80px;">
             <div class="split-text" style="max-width: 600px;">
                 <img src="images/logo.png" alt="Nano Banana Design"
                     style="width: 48px; height: 48px; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
@@ -111,7 +117,8 @@
                 </div>
             </div>
             <div class="split-visual lyrics-container" style="flex: 1;">
-                <div class="lyrics-card">
+                <div class="lyrics-card"
+                    style="background: var(--surface-bg); padding: 32px; border-radius: 24px; border: 1px solid var(--border-color);">
                     <h4>"One in a Billion"</h4>
                     <div class="lyrics-scroll">
                         <p><strong>Verse</strong><br>Fire on the feed<br>Sirens in the cloud<br>Cities blinking
@@ -139,28 +146,6 @@
             </div>
         </section>
 
-        <!-- Use Cases & Features -->
-        <section class="section-card use-cases fade-in-up">
-            <h3 class="section-title">How to Use the Destiny Engine</h3>
-            <p class="section-text" style="max-width: 500px; margin: 0 auto 30px; text-align: center;">Transform your
-                deepest shadow patterns into your greatest gifts.</p>
-
-            <div class="features-grid" style="grid-template-columns: repeat(2, 1fr);">
-                <div class="feature-item">
-                    <img src="images/logo.png" alt="Nano Banana Design"
-                        style="width: 50px; height: 50px; border-radius: 12px; margin-bottom: 16px;">
-                    <strong>Decode Your Inner Architecture</strong>
-                    <span>Dive deep into your own psychological wiring to transform your deepest shadow patterns.</span>
-                </div>
-                <div class="feature-item">
-                    <img src="images/logo.png" alt="Nano Banana Design"
-                        style="width: 50px; height: 50px; border-radius: 12px; margin-bottom: 16px;">
-                    <strong>Map Existing Dynamics</strong>
-                    <span>Analyze your current partner or complicated friend. Bypass guesswork by understanding the
-                        exact karmic friction between your fields.</span>
-                </div>
-            </div>
-        </section>
         <!-- Video Promotional Material -->
         <section class="fade-in-up" style="max-width: 320px; margin: 0 auto; text-align: center; padding: 40px 0 80px;">
             <div class="video-promo-container"
@@ -171,12 +156,13 @@
                 </video>
             </div>
         </section>
+
     </main>
 
     <footer class="footer fade-in-up">
         <div class="logo" style="margin-bottom: 8px;">1 in a <span
-                style="font-family: 'Playfair Display', serif; font-weight: 700; color: #111;">Billion</span></div>
-        <p>Only 1 in a 1,000,000,000 people share this resonance.</p>
+                style="font-family: 'Playfair Display', serif; font-weight: 700; color: #a9856f;">Billion</span></div>
+        <p>The Ultimate Psychological Mirror.</p>
         <div class="social-links">
             <a href="https://instagram.com/1inabillion.app" target="_blank" aria-label="Instagram">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
