@@ -264,6 +264,67 @@ body {
   font-style: italic;
 }
 
+/* ─── Lyrics Card ─── */
+.lyrics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lyrics-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lyrics-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #111;
+  text-align: center;
+}
+
+.lyrics-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 16px;
+  font-family: var(--font-sans);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.lyrics-scroll p {
+  margin-bottom: 16px;
+}
+
+.lyrics-scroll strong {
+  color: var(--text-main);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lyrics-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lyrics-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.lyrics-scroll::-webkit-scrollbar-thumb {
+  background: #d6cfbf;
+  border-radius: 10px;
+}
+
 /* ─── Animations ─── */
 .fade-in-up {
   opacity: 0;
